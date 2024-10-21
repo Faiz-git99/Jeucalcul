@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de calcul</title>
+    <link href="jeucalcul.css" rel="stylesheet">
+    <script src="jeucalcul.js" defer></script>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+<p class="coordonnee">
+<label for="Nom">Nom :</label>
+<input type ="text" id="nom" name="Nom" placeholder="Votre nom">
+
+<label for="Prenom">Prénom :</label>
+<input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+</p>
+
+<p class="profession">Situation sociale :
+    <label for="etudiant">Étudiant</label>
+    <input type="radio" id="etudiant" name="situation">
+<label for="salarie">Salarié</label>
+<input type="radio" id="salarie" name="situation">
+</p>
+
+<p class="AnneeNaissance">Année de naissance :
+<label for="annee"></label>
+<input type="number" id="dateNaissance" name="dateNaissance" placeholder="AAAA">
+</p>
+
+<button type="button" id="ageAuto">valider</button>
+
+</fieldset>
+    </form>
+</body>
+
+</html>
