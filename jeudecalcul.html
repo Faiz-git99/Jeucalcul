@@ -9,32 +9,60 @@
 </head>
 
 <body>
-    <form>
-        <fieldset>
-<p class="coordonnee">
-<label for="Nom">Nom :</label>
-<input type ="text" id="nom" name="Nom" placeholder="Votre nom">
+    <header>
+        <h1>Jeu de calcul automatique de l’âge</h1>
+        <h2>L’application le plus fiable pour connaître votre âge</h2>
+        <h3>Vous serez heureux d’apprendre votre âge</h3>
+    </header>
 
-<label for="Prenom">Prénom :</label>
-<input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
-</p>
+<main>
+<form>
+        
+<div class="personne">
+    <p>Veuillez saisir votre nom et votre prénom.</p>
 
-<p class="profession">Situation sociale :
+<div class="identite"></div>
+    <label for="Nom">Nom :</label>
+    <input type ="text" id="nom" name="Nom" placeholder="Votre nom" required/>
+
+    <label for="Prenom">Prénom :</label>
+    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required/>
+</div>
+</div>
+
+<br>
+
+<div class="situation">Situation sociale :
     <label for="etudiant">Étudiant</label>
-    <input type="radio" id="etudiant" name="situation">
-<label for="salarie">Salarié</label>
-<input type="radio" id="salarie" name="situation">
+    <input type="radio" id="etudiant" name="situation" value="etudiant">
+    <label for="salarie">Salarié</label>
+    <input type="radio" id="salarie" name="situation"  value="salarie">
+</div>
+
+<br>
+
+<div class="anneeNaissance">Année de naissance :
+    <label for="annee"></label>
+    <input type="number" id="dateNaissance" name="dateNaissance" placeholder="AAAA" required/>
+</div>
+
+<br>
+
+<div class="messageAffiche" id="voirmessage"> </div>
+
+<div class="boutonValider">
+    <button type="button" id="ageAuto">valider</button>
+</div>
+<p>
+    <span id="affichage"> </span>
 </p>
 
-<p class="AnneeNaissance">Année de naissance :
-<label for="annee"></label>
-<input type="number" id="dateNaissance" name="dateNaissance" placeholder="AAAA">
-</p>
-
-<button type="button" id="ageAuto">valider</button>
-
-</fieldset>
-    </form>
+</form>
+</main>
+<footer id="afficheAnnee">
+    Le site est développé par MARI Faïz dans le cadre de la formation Développeur Web et Web Mobile organisée par Ndovoo et <a href="https://www.cariforef-mayotte.yt/" target="_blank"> CARIF-OREF 976.</a> <br><br>
+    Tous droits réservés 
+</footer>
 </body>
 
 </html>
