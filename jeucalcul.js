@@ -75,3 +75,16 @@ let age = calculAge(2024, AnneeSaisie);
  }
   
 });
+
+// je crée une variable date à partir de l'objet Date()
+// const date = new Date() je l'avais déclaré en haut pour récupérer l'année automatiquement
+console.log("Date :",date);
+
+// pour afficher l'année en cours
+console.log("Année en cours :",date.getFullYear());
+
+// pour afficher le mois
+console.log("Le mois en cours :", date.getMonth());
+
+// pour afficher le jour
+console.log("Aujourd'hui :", date.getDay());

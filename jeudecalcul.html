@@ -6,6 +6,8 @@
     <title>Jeu de calcul</title>
     <link href="jeucalcul.css" rel="stylesheet">
     <script src="jeucalcul.js" defer></script>
+    <script src="evenement.js" defer></script>
+    <script src="reglevalidation.js" defer></script>
 </head>
 
 <body>
@@ -22,10 +24,10 @@
     <p>Veuillez saisir votre nom et votre prénom.</p>
 
 <div class="identite"></div>
-    <label for="Nom">Nom :</label>
+    <label>Nom :</label>
     <input type ="text" id="nom" name="Nom" placeholder="Votre nom" required/>
 
-    <label for="Prenom">Prénom :</label>
+    <label>Prénom :</label>
     <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required/>
 </div>
 </div>
@@ -33,22 +35,26 @@
 <br>
 
 <div class="situation">Situation sociale :
-    <label for="etudiant">Étudiant</label>
+    <label>Étudiant</label>
     <input type="radio" id="etudiant" name="situation" value="etudiant">
-    <label for="salarie">Salarié</label>
+    <label>Salarié</label>
     <input type="radio" id="salarie" name="situation"  value="salarie">
 </div>
 
 <br>
 
 <div class="anneeNaissance">Année de naissance :
-    <label for="annee"></label>
+    <label></label>
     <input type="number" id="dateNaissance" name="dateNaissance" placeholder="AAAA" required/>
 </div>
 
 <br>
 
-<div class="messageAffiche" id="voirmessage"> </div>
+<div class="messageAffiche" > 
+    <p>
+        <span id="voirmessage"> </span>
+    </p>
+</div>
 
 <div class="boutonValider">
     <button type="button" id="ageAuto">valider</button>
@@ -56,7 +62,7 @@
 <p>
     <span id="affichage"> </span>
 </p>
-
+<input type="submit" value="Envoyez"/>
 </form>
 </main>
 <footer id="afficheAnnee">
