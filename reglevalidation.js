@@ -16,7 +16,7 @@ console.log(elementFormulaire);
 // J'ajoute addEventListener pour écouter l'évènement submit
 elementFormulaire.addEventListener("submit", (event) => {
     /* empêche le comportement par défaut de l'évènement submit */
-    /* event.preventDefaut(); permet d'éviterun rechargement de la page */
+    /* event.preventDefaut(); permet d'éviter un rechargement de la page */
 
     event.preventDefault();
 
